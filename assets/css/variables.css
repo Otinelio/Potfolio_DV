@@ -1,0 +1,35 @@
+:root {
+  /* Couleurs principales */
+  --color-primary: #ffc928;
+  --color-primary-rgb: 255, 201, 40;
+  --color-primaryOpacity: #ffc92862;
+  /* --color-secondary: #a4a4a4; */
+
+  /* Couleurs personnalisées */
+  --color-black: #0d0d0d;
+  --color-white: #fffdfd;
+  --color-text: #C7C7C7;
+
+  /* Police */
+  --bs-body-font-family: "Poppins", serif;
+  --ff-secondary: "Space Grotesk", sans-serif;
+
+  /* background */
+  --bs-body-bg: var(--color-black);
+  --header-height: 72px;
+
+  /* tailles */
+  --fs-s: 0.9rem;
+  --fs-sm: 1rem;
+  --fs-base: 1.3rem;
+  --fs-lg: 1.6rem;
+  --fs-xl: 2rem;
+  --fs-xxl: 2.5rem;
+  --fs-xxxl: 3.6rem;
+
+  /* poids (épaisseur) */
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
