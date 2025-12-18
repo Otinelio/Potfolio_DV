@@ -33,10 +33,11 @@
     <link rel="stylesheet" href="assets/css/composants.css" />
   </head>
   <body>
+    <div class="global-grid" aria-hidden="true"></div>
     <header>
       <nav class="navbar navbar-expand-lg rounded-bottom-4 fixed-top">
-        <div class="container-fluid mx-md-4">
-          <a class="navbar-brand px-2" href="#">Digital<span style="color: var(--color-primary);">Vision</span></a>
+        <div class="container-fluid px-md-5 mx-md-4">
+          <a class="navbar-brand" href="#">Digital<span style="color: var(--color-primary);">Vision</span></a>
           <button
             class="navbar-toggler border-0"
             type="button"
@@ -106,137 +107,439 @@
       <div class="container">
         <div class="row">
           <div class="divagence col-lg-8">
-            <p class="premium py-3">AGENCE DIGITALE PREMIUM</p>
-            <h1 class="display-4 fw-bold">DigitalVision, votre partenaire pour le <span>numérique haut de gamme</span></h1>
-            <p class="lead py-3">
+            <p class="premium">AGENCE DIGITALE PREMIUM</p>
+            <h1 class="display-4 fw-bold py-3">DigitalVision, votre partenaire pour le <span>numérique haut de gamme</span></h1>
+            <p class="lead ">
               Développement web, mobile, backend, frontend & design UI/UX. Transformons ensemble votre vision en réalité digitale exceptionnelle.
             </p>
-              <div class="m-3 row ">
-              <a href="" class="btn rounded-pill py-3 py-lg-2  px-lg-4 px-4  m-lg-0">Commencer un projet</a>
+            <div class="actions-inline justify-content-center">
+              <div class="mx-3 m-lg-0 row col-12 col-md-4">
+                <a href="" class="btn rounded-pill py-3 py-lg-2  px-lg-4 px-4  m-lg-0">
+                  Commencer un projet
+                  <i class="bi bi-arrow-right fs-6"></i>
+                </a>
+              </div>
+              <div class="mx-3 m-lg-0 row text-center col-12 col-md-3">
+                <a href="" class="btn-h rounded-pill py-3 py-lg-2  px-lg-4 px-4  m-lg-0">Voir nos services</a>
+              </div>
             </div>
-            <div class="m-3 row text-center">
-              <a href="" class="btn-h rounded-pill py-3 py-lg-2  px-lg-4 px-4  m-lg-0">Voir nos services</a>
+            <div class="scroll-indicator mouse" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section id="expertise" class="my-5 pt-md-5 pb-5 mx-1 mx-md-0">
+      <div class="container mt-md-5">
+        <div class="row pb-5">
+          <div class="col-lg-12">
+            <div class="avant-titre text-center">
+              NOS EXPERTISES
+            </div>
+            <div class="titre text-center py-2">
+              Services Premium
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 g-md-4">
+            <div class="col-12 col-md-6 col-lg-3 px-0 px-md-3">
+              <div class="card h-100 rounded-4 py-md-4 my-md-3 m-lg-0 px-md-3">
+              <div class="card-body">
+                <img src="assets/img/code.svg" alt="" class="">
+                <h5 class="card-title pt-4 pb-2">Développement Web</h5>
+                <p class="card-text pb-3">
+                  Sites web modernes et performants avec les dernières technologies. React, Next.js, et solutions sur-mesure pour votre présence en ligne.
+                </p>
+                <a href="" class="">
+                  En savoir plus
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+          </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-0 px-md-3">
+              <div class="card h-100 rounded-4 py-md-4 my-md-3 m-lg-0 px-md-3">
+              <div class="card-body">
+                <img src="assets/img/mobile.svg" alt="" class="">
+                <h5 class="card-title pt-4 pb-2">Développement Mobile</h5>
+                <p class="card-text pb-3">
+                  Applications mobiles natives et cross-platform. Expériences utilisateur fluides sur iOS et Android avec React Native et Flutter.           
+                     </p>
+                <a href="" class="">
+                  En savoir plus
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+          </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-0 px-md-3">
+              <div class="card h-100 rounded-4 py-md-4 my-md-3 m-lg-0 px-md-3">
+                <div class="card-body">
+                  <img src="assets/img/closet-remix.svg" alt="" class="" style="width: 40px !important;">
+                  <h5 class="card-title pt-4 pb-2">Backend & API</h5>
+                  <p class="card-text pb-3">
+                    Architecture robuste et scalable. APIs RESTful et GraphQL, microservices, bases de données optimisées pour vos besoins métier.
+                  </p>
+                  <a href="" class="">
+                    En savoir plus
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-0 px-md-3">
+              <div class="card h-100 rounded-4 py-md-4 my-md-3 m-lg-0 px-md-3">
+                <div class="card-body">
+                  <img src="assets/img/color.svg" alt="" class="" style="width: 40px !important;">
+                  <h5 class="card-title pt-4 pb-2">UI/UX Design</h5>
+                  <p class="card-text pb-3">
+                    Designs élégants et intuitifs. Recherche utilisateur, prototypage, design systems et interfaces qui convertissent.
+                  </p>
+                  <a href="" class="">
+                    En savoir plus
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="my-5 pt-5 mx-1 mx-md-0">
+      <div class="container mt-md-5">
+        <div class="row pb-5 justify-content-center align-items-center">
+          <div class="col-12 col-md">
+            <div class="avant-titre ">
+              PROJETS RECENTS
+            </div>
+            <div class="titre py-2">
+              Notre Portfolio
+            </div>
+          </div>
+          <div class="row col-12 col-md-4 col-lg-3 mt-3 mt-md-0 text-center ">
+            <a href="" class="btn-h rounded-pill py-3 py-lg-2 px-lg-4 w-100 w-md-auto">
+              Voir tous les projets
+            </a>
+          </div>
+          <div class="projets my-5">
+            <div class="row g-3 g-md-4">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="project-card position-relative overflow-hidden rounded-4">
+                  <img src="assets/img/accueil sans auth.PNG" alt="Projet Développement Web" class="w-100 h-100 object-fit-cover">
+                  <div class="project-overlay">
+                    <div class="project-meta">
+                      <div class="project-category">Site</div>
+                      <div class="project-name">Développement Web</div>
+                    </div>
+                    <a href="" class="project-link"><i class="bi bi-arrow-up-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="project-card position-relative overflow-hidden rounded-4">
+                  <img src="assets/img/accueil sans auth.PNG" alt="Projet Application Mobile" class="w-100 h-100 object-fit-cover">
+                  <div class="project-overlay">
+                    <div class="project-meta">
+                      <div class="project-category">Application</div>
+                      <div class="project-name">Mobile App</div>
+                    </div>
+                    <a href="" class="project-link"><i class="bi bi-arrow-up-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="project-card position-relative overflow-hidden rounded-4">
+                  <img src="assets/img/accueil sans auth.PNG" alt="Projet Backend & API" class="w-100 h-100 object-fit-cover">
+                  <div class="project-overlay">
+                    <div class="project-meta">
+                      <div class="project-category">Backend</div>
+                      <div class="project-name">API Service</div>
+                    </div>
+                    <a href="" class="project-link"><i class="bi bi-arrow-up-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="project-card position-relative overflow-hidden rounded-4">
+                  <img src="assets/img/accueil sans auth.PNG" alt="Projet UI/UX Design" class="w-100 h-100 object-fit-cover">
+                  <div class="project-overlay">
+                    <div class="project-meta">
+                      <div class="project-category">Site</div>
+                      <div class="project-name">UI/UX Design</div>
+                    </div>
+                    <a href="" class="project-link"><i class="bi bi-arrow-up-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="project-card position-relative overflow-hidden rounded-4">
+                  <img src="assets/img/accueil sans auth.PNG" alt="Projet Vitrine" class="w-100 h-100 object-fit-cover">
+                  <div class="project-overlay">
+                    <div class="project-meta">
+                      <div class="project-category">Application</div>
+                      <div class="project-name">Vitrine</div>
+                    </div>
+                    <a href="" class="project-link"><i class="bi bi-arrow-up-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="project-card position-relative overflow-hidden rounded-4">
+                  <img src="assets/img/accueil sans auth.PNG" alt="Projet Corporate" class="w-100 h-100 object-fit-cover">
+                  <div class="project-overlay">
+                    <div class="project-meta">
+                      <div class="project-category">Site</div>
+                      <div class="project-name">Corporate</div>
+                    </div>
+                    <a href="" class="project-link"><i class="bi bi-arrow-up-right"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
-    <h1>AAA</h1>
+    <section id="infos" class="">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex justify-content-center">
+            <div class="col-11 ">
+              <div class="infos-image w-100 h-100">
+              <img src="assets/img/bgimage2.jpg" class="img-fluid rounded-5 w-100" alt="">
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="col">
+              <div class="avant-titre">
+              QUI SOMMES-NOUS ?
+            </div>
+            <div class="titre py-2 " style="line-height: 1.2;">
+              DigitalVision, l'excellence digitale depuis 2020
+            </div>
+            <div class="py-2">
+              <p>
+                Nous sommes une agence digitale premium spécialisée dans la création d'expériences numériques exceptionnelles. Notre équipe d'experts passionnés combine créativité et expertise technique pour transformer vos idées en solutions digitales performantes.
+              </p>
+              <p>
+                De la conception à la réalisation, nous accompagnons nos clients dans leur transformation digitale avec des solutions sur-mesure qui dépassent leurs attentes. Notre approche centrée sur l'utilisateur garantit des résultats mesurables et durables.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="info-item">
+                  <div class="info-content">
+                    <div class="info-title">150+</div>
+                    <div class="info-description">Projets Réalisés</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="info-item">
+                  <div class="info-content">
+                    <div class="info-title">50+</div>
+                    <div class="info-description">Clients Satisfaits</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="info-item">
+                  <div class="info-content">
+                    <div class="info-title">5 Ans</div>
+                    <div class="info-description">D'Expérience</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="procedure" class="py-5">
+      <div class="container">
+        <div class="titre py-5 my-1 text-center ">
+              Notre Processus de Travail
+            </div>
+        <div class="row procedure-timeline d-none d-lg-flex align-items-center mb-4 position-relative">
+          <div class="col-lg-3 d-flex justify-content-center">
+            <div class="step-node"><span class="step-number">01</span></div>
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center">
+            <div class="step-node"><span class="step-number">02</span></div>
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center">
+            <div class="step-node"><span class="step-number">03</span></div>
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center">
+            <div class="step-node"><span class="step-number">04</span></div>
+          </div>
+        </div>
+        <div class="row procedure-cards gy-4  text-center">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="procedure-card h-100">
+              <div class="step-badge d-lg-none"><span>01</span></div>
+              <h5 class="procedure-title">Découverte</h5>
+              <p class="procedure-description">
+                Analyse des besoins, des objectifs et du contexte. Compréhension de votre audience et des contraintes du projet.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="procedure-card h-100">
+              <div class="step-badge d-lg-none"><span>02</span></div>
+              <h5 class="procedure-title">Conception</h5>
+              <p class="procedure-description">
+                Wireframes, UI/UX et architecture technique. Définition de parcours clairs et d'une identité visuelle cohérente.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="procedure-card h-100">
+              <div class="step-badge d-lg-none"><span>03</span></div>
+              <h5 class="procedure-title">Développement</h5>
+              <p class="procedure-description">
+                Implémentation, intégrations et tests. Qualité, performance et sécurité au cœur de notre exécution.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="procedure-card h-100">
+              <div class="step-badge d-lg-none"><span>04</span></div>
+              <h5 class="procedure-title">Livraison</h5>
+              <p class="procedure-description">
+                Déploiement, suivi et amélioration continue. Transfert fluide et accompagnement post-lancement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="temoignage" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="titre py-4 my-2 text-center">
+              Ce Que Disent Nos Clients
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="testimonial-card mx-auto">
+              <div class="testimonial-icon">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="testimonial-text" id="testimonial-text"></p>
+              <div class="col-1" ><hr style="color: var(--color-primary); opacity: 1;" class="border-2"></div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="author-meta">
+                  <div class="author-name" id="testimonial-author-name"></div>
+                  <div class="author-title" id="testimonial-author-title"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 my-4">
+            <div class="testimonial-nav d-flex justify-content-center align-items-center gap-3 pt-3">
+              <button class="testimonial-btn" id="testimonial-prev" aria-label="Témoignage précédent">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="testimonial-btn" id="testimonial-next" aria-label="Témoignage suivant">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demarrer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center my-5">
+            <div class="titre pt-5 pb-4 mt-2">
+              Prêt à Transformer Votre Vision Digitale ?
+            </div>
+            <div class="d-msg pb-1 py-md-3 col-12 col-md-10 col-lg-9 mx-auto">
+              Discutons de votre projet et découvrez comment nous pouvons vous aider à atteindre vos objectifs digitaux.
+            </div>
+            <div class="my-3 row justify-content-center mt-4">
+              <button class="btn rounded-pill col-10 col-md-8 col-lg-6  py-3  px-lg-4 px-4   m-lg-0">
+                Démarrer votre Projet <i class="bi bi-rocket ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer py-5 mx-0 px-0">
+      <div class="container">
+        <div class="row gy-4 align-items-start mx-0 px-0">
+          <div class="col-12 col-md-6 col-lg-4 mx-0 px-0">
+            <div class="footer-brand d-flex align-items-center gap-2 mb-3 mx-0 px-0">
+              
+              <span class="brand-name">Digital<span style="color: var(--color-primary);">Vision</span></span>
+            </div>
+            <p class="footer-desc">
+              Votre partenaire pour le numérique haut de gamme. Excellence et innovation digitale.
+            </p>
+            <div class="footer-social d-flex align-items-center gap-2 mt-3">
+              <a href="#" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-btn" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-btn" aria-label="Github"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="footer-title">Services</div>
+            <ul class="footer-list list-unstyled">
+              <li><a href="#">Développement Web</a></li>
+              <li><a href="#">Développement Mobile</a></li>
+              <li><a href="#">Backend & API</a></li>
+              <li><a href="#">Frontend Moderne</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Maintenance</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="footer-title">Entreprise</div>
+            <ul class="footer-list list-unstyled">
+              <li><a href="pages/apropos.html">À Propos</a></li>
+              <li><a href="pages/portfolio.html">Portfolio</a></li>
+              <li><a href="pages/services.html">Services</a></li>
+              <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="footer-title">Newsletter</div>
+            <p class="footer-desc">Restez informé de nos actualités et innovations</p>
+            <form class="footer-newsletter">
+              <div class="input-group footer-input-group">
+                <input type="email" style="font-size:var(--fs-s)" class="form-control footer-input" placeholder="Votre email" aria-label="Votre email">
+                <button class="btn footer-send" type="button" aria-label="S’inscrire"><i class="bi bi-send-fill"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="footer-sep my-4">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <div class="footer-copy">© 2025 DigitalVision. Tous droits réservés.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+ 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

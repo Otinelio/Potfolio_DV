@@ -30,3 +30,23 @@
   color: var(--color-black) !important;
   background-color: var(--color-primary);
 }
+
+/* titre set avant titre */
+
+.titre {
+  font-size: var(--fs-xl) !important;
+  font-weight: var(--fw-bold) !important;
+  color: var(--color-white) !important;
+  font-family: var(--ff-secondary) !important;
+  @media (min-width: 768px) {
+    font-size: var(--fs-xxl) !important;
+  }
+}
+
+.avant-titre {
+  font-size: var(--fs-s) !important;
+  font-weight: var(--fw-medium) !important;
+  color: var(--color-primary) !important;
+  font-family: var(--ff-secondary);
+}
+

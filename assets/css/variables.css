@@ -7,6 +7,7 @@
 
   /* Couleurs personnalisées */
   --color-black: #0d0d0d;
+  --color-dark: #1a1a1a;
   --color-white: #fffdfd;
   --color-text: #C7C7C7;
 
@@ -19,10 +20,11 @@
   --header-height: 72px;
 
   /* tailles */
+  --fs-0: 0.7rem;
   --fs-s: 0.9rem;
   --fs-sm: 1rem;
   --fs-base: 1.3rem;
-  --fs-lg: 1.6rem;
+  --fs-lg: 1.4rem;
   --fs-xl: 2rem;
   --fs-xxl: 2.5rem;
   --fs-xxxl: 3.6rem;
