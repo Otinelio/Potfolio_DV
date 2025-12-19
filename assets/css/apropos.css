@@ -1,0 +1,133 @@
+section.apropos-hero {
+  position: relative;
+  margin-top: var(--header-height);
+  min-height: calc(50vh - var(--header-height));
+  background-image: url("../img/nature.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.apropos-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.795);
+}
+section.apropos-hero .row {
+  position: relative;
+  z-index: 1;
+  p {
+    color: var(--color-primary);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-lg);
+  }
+  h2 {
+    color: var(--color-white);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-xxxl);
+  }
+}
+section.apropos-hero h2 {   
+  color: var(--color-white);
+  font-family: var(--ff-secondary);
+}
+@media (min-width: 992px) {
+  section.apropos-hero {
+    min-height: calc(50vh - var(--header-height));
+  }
+}
+
+.m-text {
+  color: var(--color-text);
+  font-size: var(--fs-base);
+}
+
+
+section#valeur {
+  background-color: var(--color-dark);
+}
+
+.valeur-card {
+  background-color: var(--color-black);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valeur-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 30px rgba(var(--color-primary-rgb), 0.15);
+}
+
+.valeur-card .icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+}
+
+.valeur-card .valeur-title {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  margin-bottom: 1rem;
+  font-family: var(--ff-secondary);
+}
+
+.valeur-card .valeur-desc {
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Section Stack Technique */
+section#stack {
+  background-color: var(--color-black);
+}
+
+section#stack .section-title {
+  color: var(--color-white);
+  font-family: var(--ff-secondary);
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+}
+
+section#stack .section-desc {
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+}
+
+section#stack .category-title {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: var(--fw-medium);
+}
+
+section#stack .tech-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--color-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 99px;
+  color: var(--color-white);
+  font-size: var(--fs-s);
+  transition: all 0.3s ease;
+}
+
+section#stack .tech-badge:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.2);
+}

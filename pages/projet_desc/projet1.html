@@ -28,10 +28,11 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/composants.css" />
-    <link rel="stylesheet" href="../assets/css/portfolio.css" />
-    <link rel="stylesheet" href="../assets/css/variables.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/composants.css" />
+    <link rel="stylesheet" href="/assets/css/portfolio.css" />
+    <link rel="stylesheet" href="/assets/css/variables.css" />
+    <link rel="stylesheet" href="/assets/css/projet_desc/projet1.css" />
   </head>
   <body>
     <header>
@@ -59,35 +60,35 @@
                 <a
                   class="nav-link col py-3 m-0 p-lg-0"
                   aria-current="page"
-                  href="../index.html"
+                  href="/index.html"
                   >Accueil</a
                 >
                 <hr />
                 <a
                   class="nav-link col py-3 m-0 p-lg-0"
                   aria-current="page"
-                  href="services.html" 
+                  href="/pages/services.html" 
                   >Services</a
                 >
                 <hr />
                 <a
                   class="nav-link active col py-3 m-0 p-lg-0"
                   aria-current="page"
-                  href="portfolio.html"
+                  href="/pages/portfolio.html"
                   >Portfolio</a
                 >
                 <hr />
                 <a
                   class="nav-link col py-3 m-0 p-lg-0"
                   aria-current="page"
-                  href="apropos.html"
+                  href="/pages/apropos.html"
                   >À Propos</a
                 >
                 <hr />
                 <a
                   class="nav-link  col py-3 m-0 p-lg-0"
                   aria-current="page"
-                  href="contact.html"
+                  href="/pages/contact.html"
                   >Contact</a
                 >
                  <hr class="" />
@@ -104,122 +105,106 @@
       </nav>
     </header>
 
-    <section id="portfolio" class="portfolio-hero container-fluid">
+    <section id="projet1" class="projet1-hero container-fluid">
       <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-lg-8 text-center pt-5">
-          <h2 class="display-4 fw-bold">Nos Réalisations</h2>
-        </div>
-      </div>
-      <div class="row pt-3 pb-4">
-        <div class="col-12 d-flex justify-content-center">
-          <div class="portfolio-filters d-flex flex-wrap justify-content-center gap-2 py-3">
-            <button class="filter-chip active" data-filter="all">Tous</button>
-            <button class="filter-chip" data-filter="web">Web</button>
-            <button class="filter-chip" data-filter="mobile">Mobile</button>
-            <button class="filter-chip" data-filter="design">Design</button>
-            <button class="filter-chip" data-filter="backend">Backend</button>
-          </div>
+        <div class=" text-center px-5">
+          <p class="">Développement Web • 2024</p>
+          <h2 class="fw-bold">E-Commerce Luxe</h2>
         </div>
       </div>
     </section>
-    <section class="portfolio-projects container my-5 py-5">
-      <div class="projets">
-        <div class="row g-3 g-md-4">
-          <div class="col-12 col-md-6 col-lg-4">
-            <a href="projet_desc/projet1.html">
-              <div class="project-card type-web position-relative overflow-hidden rounded-4">
-              <img src="../assets/img/accueil sans auth.PNG" alt="Projet Développement Web" class="w-100 h-100 object-fit-cover">
-              <div class="project-overlay">
-                <div class="project-meta">
-                  <div class="project-category">Site</div>
-                  <div class="project-name">Site Corporate</div>
-                  <div class="project-techs"><span>Vue</span><span>Vite</span></div>
+    <section id="projet-details" class="project-section container-fluid py-5 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-lg-8">
+            <h3 class="section-title pb-3">À Propos du Projet</h3>
+            <p class="lead">
+              Création d’une plateforme e‑commerce haut de gamme pour une marque de mode de luxe parisienne. Le projet incluait la conception complète de l’expérience utilisateur, le développement d’une interface élégante et performante, ainsi que l’intégration d’un système de paiement sécurisé.
+            </p>
+            <p class="lead">
+              LuxeMode Paris souhaitait moderniser sa présence en ligne et offrir à sa clientèle internationale une expérience d’achat digitale à la hauteur de ses boutiques physiques. L’objectif était de créer une plateforme qui reflète l’élégance de la marque tout en garantissant une navigation fluide et des performances optimales.
+            </p>
+
+            <h4 class="sub-title mt-4 pt-4 pb-3">Objectifs</h4>
+            <ul class="objective-list my-3 pb-4">
+              <li><i class="bi bi-check-lg py-1"></i>Créer une expérience utilisateur premium et intuitive</li>
+              <li><i class="bi bi-check-lg py-1"></i>Développer un système de catalogue produits performant</li>
+              <li><i class="bi bi-check-lg py-1"></i>Intégrer des paiements sécurisés multi‑devises</li>
+              <li><i class="bi bi-check-lg py-1"></i>Optimiser pour le SEO et les conversions</li>
+              <li><i class="bi bi-check-lg py-1"></i>Assurer une compatibilité mobile parfaite</li>
+            </ul>
+
+            <h4 class="sub-title mt-4">Résultats</h4>
+            <div class="row gy-3 gx-3 mt-2">
+              <div class="col-12 col-md-6">
+                <div class="result-card">
+                  <div class="result-value">+445%</div>
+                  <div class="result-label">Trafic organique</div>
                 </div>
-                <button class="project-link" aria-label="Voir le projet"><i class="bi bi-arrow-up-right"></i></button>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="result-card">
+                  <div class="result-value">+78%</div>
+                  <div class="result-label">Taux de conversion</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="result-card">
+                  <div class="result-value">+32%</div>
+                  <div class="result-label">Panier moyen</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="result-card">
+                  <div class="result-value">+32%</div>
+                  <div class="result-label">Panier moyen</div>
+                </div>
               </div>
             </div>
-            </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <a href="projet_desc/projet1.html">
-              <div class="project-card type-mobile position-relative overflow-hidden rounded-4">
-              <img src="../assets/img/accueil sans auth.PNG" alt="Projet Application Mobile" class="w-100 h-100 object-fit-cover">
-              <div class="project-overlay">
-                <div class="project-meta">
-                  <div class="project-category">Application</div>
-                  <div class="project-name">E‑Commerce App</div>
-                  <div class="project-techs"><span>React Native</span><span>Redux</span></div>
+
+          <div class="col-12 col-lg-4">
+            <aside class="project-aside card px-4 py-3">
+              <div class="aside-header">Informations Projet</div>
+              <div class="aside-body">
+                <div class="aside-item py-2">
+                  <div class="aside-label">Client</div>
+                  <div class="aside-value">LuxeMode Paris</div>
                 </div>
-                <button class="project-link" aria-label="Voir le projet"><i class="bi bi-arrow-up-right"></i></button>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <a href="projet_desc/projet1.html">
-              <div class="project-card type-backend position-relative overflow-hidden rounded-4">
-              <img src="../assets/img/accueil sans auth.PNG" alt="Projet Backend & API" class="w-100 h-100 object-fit-cover">
-              <div class="project-overlay">
-                <div class="project-meta">
-                  <div class="project-category">Backend</div>
-                  <div class="project-name">API Catalogue</div>
-                  <div class="project-techs"><span>Express</span><span>MongoDB</span></div>
+                <div class="aside-item py-2">
+                  <div class="aside-label">Date</div>
+                  <div class="aside-value">2024</div>
                 </div>
-                <button class="project-link" aria-label="Voir le projet"><i class="bi bi-arrow-up-right"></i></button>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <a href="projet_desc/projet1.html">
-              <div class="project-card type-web position-relative overflow-hidden rounded-4">
-              <img src="../assets/img/accueil sans auth.PNG" alt="Projet Développement Web" class="w-100 h-100 object-fit-cover">
-              <div class="project-overlay">
-                <div class="project-meta">
-                  <div class="project-category">Site</div>
-                  <div class="project-name">Site Corporate</div>
-                  <div class="project-techs"><span>Vue</span><span>Vite</span></div>
+                <div class="aside-item py-2">
+                  <div class="aside-label">Durée</div>
+                  <div class="aside-value">12 semaines</div>
                 </div>
-                <button class="project-link" aria-label="Voir le projet"><i class="bi bi-arrow-up-right"></i></button>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <a href="projet_desc/projet1.html">
-              <div class="project-card type-mobile position-relative overflow-hidden rounded-4">
-              <img src="../assets/img/accueil sans auth.PNG" alt="Projet Application Mobile" class="w-100 h-100 object-fit-cover">
-              <div class="project-overlay">
-                <div class="project-meta">
-                  <div class="project-category">Application</div>
-                  <div class="project-name">E‑Commerce App</div>
-                  <div class="project-techs"><span>React Native</span><span>Redux</span></div>
+
+                <div class="aside-item py-2">
+                  <div class="aside-label pb-2">Stack Technique</div>
+                  <div class="stack-badges">
+                    <span class="stack-badge">React</span>
+                    <span class="stack-badge">Next.js</span>
+                    <span class="stack-badge">TypeScript</span>
+                    <span class="stack-badge">Tailwind CSS</span>
+                    <span class="stack-badge">Node.js</span>
+                    <span class="stack-badge">PostgreSQL</span>
+                    <span class="stack-badge">Stripe</span>
+                    <span class="stack-badge">AWS</span>
+                  </div>
                 </div>
-                <button class="project-link" aria-label="Voir le projet"><i class="bi bi-arrow-up-right"></i></button>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <a href="projet_desc/projet1.html">
-              <div class="project-card type-backend position-relative overflow-hidden rounded-4">
-              <img src="../assets/img/accueil sans auth.PNG" alt="Projet Backend & API" class="w-100 h-100 object-fit-cover">
-              <div class="project-overlay">
-                <div class="project-meta">
-                  <div class="project-category">Backend</div>
-                  <div class="project-name">API Catalogue</div>
-                  <div class="project-techs"><span>Express</span><span>MongoDB</span></div>
+
+                <div class="mt-3">
+                  <a href="#" class="btn rounded-pill w-100 py-3">Visiter le site <i class="bi bi-box-arrow-up-right ms-1"></i></a>
                 </div>
-                <button class="project-link" aria-label="Voir le projet"><i class="bi bi-arrow-up-right"></i></button>
               </div>
-            </div>
-            </a>
+            </aside>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="site-footer py-5 mx-0 px-0">
+        <footer class="site-footer py-5 mx-0 px-0">
       <div class="container">
         <div class="row gy-4 align-items-start mx-0 px-0">
           <div class="col-12 col-md-6 col-lg-4 mx-0 px-0">
@@ -251,10 +236,10 @@
           <div class="col-6 col-lg-2">
             <div class="footer-title">Entreprise</div>
             <ul class="footer-list list-unstyled">
-              <li><a href="apropos.html">À Propos</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/pages/apropos.html">À Propos</a></li>
+              <li><a href="/pages/portfolio.html">Portfolio</a></li>
+              <li><a href="/pages/services.html">Services</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-12 col-lg-4">
@@ -282,6 +267,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

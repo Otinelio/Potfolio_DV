@@ -1,0 +1,151 @@
+section.contact-hero {
+  position: relative;
+  margin-top: var(--header-height);
+  min-height: calc(50vh - var(--header-height));
+  background-image: url("../img/nature.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.contact-hero::before {  
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.795);
+}
+section.contact-hero .row {
+  position: relative;
+  z-index: 1;
+  p {
+    color: var(--color-primary);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-lg);
+  }
+  h2 {
+    color: var(--color-white);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-xxxl);
+  }
+}
+section.contact-hero h2 {   
+  color: var(--color-white);
+  font-family: var(--ff-secondary);
+}
+@media (min-width: 992px) {
+  section.contact-hero {
+    min-height: calc(50vh - var(--header-height));
+  }
+}
+
+
+
+.contact-form-wrapper,
+.contact-card {
+  background-color: var(--color-dark);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.form-label {
+  color: var(--color-white);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control,
+.form-select {
+  background-color: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  padding: 0.8rem 1rem;
+  border-radius: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #0d0d0d;
+  border-color: var(--color-primary);
+  box-shadow: none; /* Removed default bootstrap shadow */
+  color: var(--color-white);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Fix for select arrow color (optional, often needed for dark mode) */
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+/* Sidebar Specifics */
+.contact-card h4 {
+  color: var(--color-white);
+  font-family: var(--ff-secondary); /* Assuming this is the heading font */
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 201, 40, 0.1); /* Primary with opacity */
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  border: 1px solid rgba(255, 201, 40, 0.2);
+}
+
+.contact-link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--color-primary);
+}
+
+/* Social Icons */
+.social-icon-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.social-icon-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  transform: translateY(-2px);
+}
+
+/* Availability Badge */
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+}

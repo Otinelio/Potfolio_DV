@@ -269,7 +269,7 @@ section.portfolio-hero p.lead {
   padding: 0.2rem 0.5rem;
   color: var(--color-white);
   font-size: var(--fs-xs, 12px);
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--color-dark);
 }
 .portfolio-projects .projets .project-link {
   position: absolute;
