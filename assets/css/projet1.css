@@ -2,7 +2,7 @@ section.projet1-hero {
   position: relative;
   margin-top: var(--header-height);
   min-height: calc(60vh - var(--header-height));
-  background-image: url("/assets/img/accueil sans auth.PNG");
+  background-image: url("../img/accueil sans auth.PNG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
