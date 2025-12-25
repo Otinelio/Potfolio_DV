@@ -1,52 +1,56 @@
-/* boutton */
+/* boutons */
 .btn {
-  font-size: var(--fs-s) !important;
-  font-weight: var(--fw-medium) !important;
-  color: var(--color-black) !important;
+  font-size: var(--fs-s);
+  font-weight: var(--fw-medium);
+  color: var(--color-black);
   background-color: var(--color-primary);
   position: relative;
-  transition: all 0.3s ease;
   white-space: nowrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
 }
 
-.btn:hover {
-  background-color: var(--color-primary);
-  transform: scale(1.05);
-  box-shadow: 0 0 20px var(--color-primaryOpacity) !important;
+@media (hover: hover) {
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--color-primaryOpacity);
+  }
 }
+
 .btn-h {
-  font-size: var(--fs-s) !important;
-  font-weight: var(--fw-medium) !important;
-  color: var(--color-primary) !important;
-  /* background-color: var(--color-primary); */
+  font-size: var(--fs-s);
+  font-weight: var(--fw-medium);
+  color: var(--color-primary);
   border: 1px solid var(--color-primary);
-  position: relative;
-  transition: all 0.3s ease;
-  white-space: nowrap;
   text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-h:hover {
-  color: var(--color-black) !important;
-  background-color: var(--color-primary);
+@media (hover: hover) {
+  .btn-h:hover {
+    color: var(--color-black);
+    background-color: var(--color-primary);
+  }
 }
 
-/* titre set avant titre */
-
+/* titres */
 .titre {
-  font-size: var(--fs-xl) !important;
-  font-weight: var(--fw-bold) !important;
-  color: var(--color-white) !important;
-  font-family: var(--ff-secondary) !important;
-  @media (min-width: 768px) {
-    font-size: var(--fs-xxl) !important;
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+  font-family: var(--ff-secondary);
+}
+
+@media (min-width: 768px) {
+  .titre {
+    font-size: var(--fs-xxl);
   }
 }
 
 .avant-titre {
-  font-size: var(--fs-s) !important;
-  font-weight: var(--fw-medium) !important;
-  color: var(--color-primary) !important;
+  font-size: var(--fs-s);
+  font-weight: var(--fw-medium);
+  color: var(--color-primary);
   font-family: var(--ff-secondary);
 }
-
