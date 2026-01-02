@@ -1,22 +1,20 @@
 :root {
-  /* Couleurs principales */
+  /* couleurs */
   --color-primary: #ffc928;
   --color-primary-rgb: 255, 201, 40;
-  --color-primaryOpacity: #ffc92862;
-  /* --color-secondary: #a4a4a4; */
+  --color-primaryOpacity: rgba(var(--color-primary-rgb), 0.38);
 
-  /* Couleurs personnalisées */
   --color-black: #0d0d0d;
   --color-dark: #1a1a1a;
   --color-white: #fffdfd;
-  --color-text: #C7C7C7;
+  --color-text: #c7c7c7;
 
-  /* Police */
-  --bs-body-font-family: "Poppins", serif;
-  --ff-secondary: "Space Grotesk", sans-serif;
+  /* polices */
+  --bs-body-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Poppins", sans-serif;
+  --ff-secondary: "Space Grotesk", system-ui, -apple-system, sans-serif;
 
   /* background */
-  --bs-body-bg: var(--color-black);
+  --bs-body-bg: #0d0d0d;
   --header-height: 72px;
 
   /* tailles */
@@ -29,9 +27,18 @@
   --fs-xxl: 2.5rem;
   --fs-xxxl: 3.6rem;
 
-  /* poids (épaisseur) */
+  /* poids */
   --fw-light: 300;
   --fw-normal: 400;
   --fw-medium: 500;
   --fw-bold: 700;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  -webkit-font-smoothing: antialiased;
 }

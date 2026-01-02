@@ -13,18 +13,25 @@ section.services-hero {
   will-change: background-position;
   animation: heroGridDrift 24s ease-in-out infinite;
 }
+
 section.services-hero h2 {
   color: var(--color-white);
   font-family: var(--ff-secondary);
 }
+
 section.services-hero p.lead {
   color: var(--color-text);
   font-weight: var(--fw-normal);
 }
+
 @media (min-width: 992px) {
   section.services-hero {
     min-height: calc(40vh - var(--header-height));
   }
+}
+
+section#méthodologie {
+  background-color: var(--color-dark);
 }
 
 section#méthodologie .method-card {
@@ -36,11 +43,13 @@ section#méthodologie .method-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   height: 100%;
 }
+
 section#méthodologie .method-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 20px rgba(var(--color-primary-rgb), 0.35);
   border-color: var(--color-primary);
 }
+
 section#méthodologie .method-step {
   position: absolute;
   right: 0.75rem;
@@ -49,20 +58,24 @@ section#méthodologie .method-step {
   color: rgba(var(--color-primary-rgb), 0.15);
   font-size: var(--fs-xxxl);
 }
+
 section#méthodologie .method-icon {
   color: var(--color-primary);
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
+
 section#méthodologie .method-title {
   color: var(--color-white);
   font-size: var(--fs-base);
   font-weight: var(--fw-medium);
 }
+
 section#méthodologie .method-desc {
   color: var(--color-text);
   font-size: var(--fs-sm);
 }
+
 section.service-section .service-label {
   color: var(--color-primary);
   font-size: var(--fs-s);
@@ -71,6 +84,7 @@ section.service-section .service-label {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
+
 section.service-section .service-title {
   color: var(--color-white);
   font-family: var(--ff-secondary);
@@ -78,16 +92,19 @@ section.service-section .service-title {
   font-size: var(--fs-xl);
   margin-bottom: 0.75rem;
 }
+
 section.service-section .service-lead {
   color: var(--color-text);
   font-size: var(--fs-sm);
   margin-bottom: 1rem;
 }
+
 section.service-section .service-list {
   list-style: none;
   padding: 0;
   margin: 0 0 1rem 0;
 }
+
 section.service-section .service-list li {
   display: flex;
   align-items: flex-start;
@@ -95,15 +112,18 @@ section.service-section .service-list li {
   color: var(--color-white);
   margin-bottom: 0.4rem;
 }
+
 section.service-section .service-list i.bi {
   color: var(--color-primary);
   margin-top: 0.1rem;
 }
+
 section.service-section .service-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
 section.service-section .stack-badge {
   display: inline-flex;
   align-items: center;
@@ -114,6 +134,7 @@ section.service-section .stack-badge {
   font-size: var(--fs-s);
   background: #111;
 }
+
 section.service-section .service-media {
   position: relative;
   border: 1px solid var(--color-primary);
@@ -121,79 +142,78 @@ section.service-section .service-media {
   overflow: hidden;
   box-shadow: 0 0 30px rgba(var(--color-primary-rgb), 0.35);
 }
+
 section.service-section .service-image {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+
 @media (min-width: 992px) {
   section.service-section .service-image {
     height: 100%;
   }
 }
-  /* Desktop et grande tablette - Image à côté du texte */
-  @media (min-width: 1200px) {
-    .service-media {
-      height: 100%;
-    }
 
-    .service-media img {
-      max-height: 40px;
-      min-height: 40px;
-    }
-  }
-  @media (min-width: 992px) {
-    .service-media {
-      height: 100%;
-    }
-
-    .service-media img {
-      max-height: 500px;
-      min-height: 400px;
-    }
+/* Desktop et grande tablette - Image à côté du texte */
+@media (min-width: 1200px) {
+  section.service-section .service-media {
+    height: 100%;
   }
 
-  /* Tablette moyenne */
-  @media (min-width: 768px) and (max-width: 991px) {
-    .service-media {
-      margin-top: 20px;
-      height: auto;
-    }
-    .service-media img {
-      max-height: 500px;
-      min-height: 400px;
-    }
+  section.service-section .service-media img {
+    max-height: 40px;
+    min-height: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  section.service-section .service-media {
+    height: 100%;
   }
 
-  /* Petite tablette et mobile - Image en bas */
-  @media (max-width: 767px) {
-    .service-media {
-      margin-top: 20px;
-      height: auto;
-    }
+  section.service-section .service-media img {
+    max-height: 500px;
+    min-height: 400px;
+  }
+}
 
-    .service-media img {
-      height: 400px;
-      min-height: 400px;
-      max-height: 500px;
-    }
+/* Tablette moyenne */
+@media (min-width: 768px) and (max-width: 991px) {
+  section.service-section .service-media {
+    margin-top: 20px;
+    height: auto;
+  }
+  section.service-section .service-media img {
+    max-height: 500px;
+    min-height: 400px;
+  }
+}
+
+/* Petite tablette et mobile - Image en bas */
+@media (max-width: 767px) {
+  section.service-section .service-media {
+    margin-top: 20px;
+    height: auto;
   }
 
-  /* Mobile très petit */
-  @media (max-width: 576px) {
-    .service-media {
-      margin-top: 18px;
-      height: auto;
-    }
-    .service-media img {
-      height: 500px;
-      min-height: 500px;
-      max-height: 500px;
-    }
+  section.service-section .service-media img {
+    height: 400px;
+    min-height: 400px;
+    max-height: 500px;
   }
+}
 
-
-  section#méthodologie {
-    background-color: var(--color-dark);
+/* Mobile très petit */
+@media (max-width: 576px) {
+  section.service-section .service-media {
+    margin-top: 18px;
+    height: auto;
   }
+  section.service-section .service-media img {
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+  }
+}
