@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var items = rawItems.map(function (card) {
         var wrapper = card.closest('.portfolio-projects .row') ? card.closest('[class*="col-"]') : card;
         if (!wrapper) wrapper = card;
-        var m = (card.className.match(/type-([a-z]+)/i) || []);
+        var m = card.className.match(/type-([a-z]+)/i) || [];
         var type = m[1] ? m[1].toLowerCase() : '';
         wrapper.dataset.filterType = type;
         return wrapper;
@@ -176,5 +176,29 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
     applyFilter('all');
+  }
+
+  var revealTargets = Array.prototype.slice.call(document.querySelectorAll('section, .card, .project-card, .result-card, .project-aside, .method-card, .procedure-card, .info-item'));
+  if (revealTargets.length) {
+    revealTargets.forEach(function (el) {
+      el.classList.add('reveal');
+    });
+    if ('IntersectionObserver' in window) {
+      var revealObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      revealTargets.forEach(function (el) {
+        revealObserver.observe(el);
+      });
+    } else {
+      revealTargets.forEach(function (el) {
+        el.classList.add('reveal-visible');
+      });
+    }
   }
 });
