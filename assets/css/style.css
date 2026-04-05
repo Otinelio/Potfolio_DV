@@ -87,6 +87,15 @@ section#portfolio .projets .project-card:hover .project-link {
   box-shadow: 0 6px 14px var(--color-primaryOpacity);
 }
 
+section#portfolio .projets .project-link:active,
+section#portfolio .projets .project-link:focus {
+  transform: scale(0.95);
+  box-shadow: none;
+  outline: none;
+  background: var(--color-primary);
+  color: var(--color-black);
+}
+
 @media (max-width: 991.98px) {
   section#portfolio .projets .project-overlay {
     opacity: 1;
@@ -158,9 +167,11 @@ header div .navbar-toggler {
 }
 
 /* Supprime le focus/border au clic */
-header div .navbar-toggler:focus {
+header div .navbar-toggler:focus,
+header div .navbar-toggler:active {
   box-shadow: none !important;
   outline: none !important;
+  background-color: transparent !important;
 }
 
 header div .navbar-toggler-icon {
@@ -948,6 +959,16 @@ section#temoignage #testimonial-next:hover {
   box-shadow: 0 8px 18px var(--color-primaryOpacity);
 }
 
+section#temoignage .testimonial-btn:active,
+section#temoignage .testimonial-btn:focus {
+  transform: scale(0.95);
+  box-shadow: none;
+  outline: none;
+  background: var(--color-primary);
+  color: var(--color-black);
+  border-color: var(--color-primary);
+}
+
 section#demarrer .d-msg {
   font-size: var(--fs-sm);
   font-weight: var(--fw-normal);
@@ -1022,6 +1043,16 @@ footer.site-footer .social-btn:hover {
   color: var(--color-black);
   transform: translateY(-2px);
   box-shadow: 0 6px 14px var(--color-primaryOpacity);
+}
+
+footer.site-footer .social-btn:active,
+footer.site-footer .social-btn:focus {
+  background: var(--color-primary);
+  color: var(--color-black);
+  transform: scale(0.95);
+  box-shadow: none;
+  border-color: var(--color-primary);
+  outline: none;
 }
 
 footer.site-footer .footer-input-group .form-control.footer-input {

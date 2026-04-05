@@ -2,8 +2,9 @@
 .btn {
   font-size: var(--fs-s);
   font-weight: var(--fw-medium);
-  color: var(--color-black);
-  background-color: var(--color-primary);
+  color: var(--color-black) !important;
+  background-color: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
   position: relative;
   white-space: nowrap;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -14,26 +15,47 @@
   .btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px var(--color-primary);
-    color: var(--color-black);
-    background-color: var(--color-primary);
+    color: var(--color-black) !important;
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
   }
+}
+
+.btn:active, .btn:focus {
+  transform: scale(0.95) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: var(--color-black) !important;
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
 }
 
 .btn-h {
   font-size: var(--fs-s);
   font-weight: var(--fw-medium);
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  color: var(--color-primary) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--color-primary) !important;
   text-decoration: none;
   white-space: nowrap;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 @media (hover: hover) {
   .btn-h:hover {
-    color: var(--color-black);
-    background-color: var(--color-primary);
+    color: var(--color-black) !important;
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
   }
+}
+
+.btn-h:active, .btn-h:focus {
+  transform: scale(0.95) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: var(--color-black) !important;
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
 }
 
 /* titres */
